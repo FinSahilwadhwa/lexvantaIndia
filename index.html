@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<script>
-const toggle = document.getElementById("modeToggle");
-toggle.onclick = function () {
-  document.documentElement.classList.toggle("light");
-};
-</script>  
+
 <body>
+
+<!-- Dark / Light Toggle -->
 <button id="modeToggle" class="mode-toggle">🌙</button>
+
 <!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
@@ -28,7 +26,22 @@ toggle.onclick = function () {
     </div>
   </div>
 </header>
-
+<section class="founder">
+  <div class="founder-inner">
+    <div class="founder-image">
+      <img src="founder.jpg" alt="Sahil Wadhwa">
+    </div>
+    <div class="founder-text">
+      <h2>Sahil Wadhwa</h2>
+      <h4>Founder – Lexvanta India</h4>
+      <p>
+        I help startups, MSMEs and professionals manage GST, Income Tax, ROC and
+        compliance with clarity, speed and reliability. Lexvanta India was built
+        to remove confusion and make business compliance simple for everyone.
+      </p>
+    </div>
+  </div>
+</section>
 <!-- SERVICES -->
 <section class="services">
   <h2>Our Services</h2>
@@ -52,7 +65,7 @@ toggle.onclick = function () {
       </p>
     </div>
     <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="Business" />
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80">
     </div>
   </div>
 </section>
@@ -62,21 +75,21 @@ toggle.onclick = function () {
   <h2>What Our Clients Say</h2>
   <div class="testimonial-grid">
     <div class="card">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" />
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
       <h4>Amit Verma</h4>
       <p>Startup Founder</p>
       <span>“Lexvanta handled our GST and DSC fast and professionally.”</span>
     </div>
 
     <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" />
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
       <h4>Neha Sharma</h4>
       <p>MSME Owner</p>
       <span>“Very smooth process and always available on WhatsApp.”</span>
     </div>
 
     <div class="card">
-      <img src="https://randomuser.me/api/portraits/men/55.jpg" />
+      <img src="https://randomuser.me/api/portraits/men/55.jpg">
       <h4>Rakesh Patel</h4>
       <p>Tender Consultant</p>
       <span>“Reliable DSC service for all my tender clients.”</span>
@@ -94,6 +107,13 @@ toggle.onclick = function () {
 <footer>
   <p>© 2026 Lexvanta India</p>
 </footer>
+
+<!-- JS (MUST be at bottom) -->
+<script>
+document.getElementById("modeToggle").addEventListener("click", function () {
+  document.body.classList.toggle("light");
+});
+</script>
 
 </body>
 </html>
