@@ -6,8 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
+<script>
+const toggle = document.getElementById("modeToggle");
+toggle.onclick = function () {
+  document.documentElement.classList.toggle("light");
+};
+</script>  
 <body>
-
+<button id="modeToggle" class="mode-toggle">🌙</button>
 <!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
