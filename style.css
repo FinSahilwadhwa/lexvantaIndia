@@ -180,7 +180,49 @@ h2 {
   background: #0B1F33;
   color: white;
 }
+/* ===== Founder Section ===== */
 
+.founder {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.founder-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.founder-image img {
+  width: 260px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.founder-text h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.founder-text h4 {
+  margin-top: 5px;
+  color: #C9A24D;
+  font-weight: 600;
+}
+
+.founder-text p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Light mode support */
+body.light .founder {
+  background: #f4f6f8;
+}
 /* FOOTER */
 footer {
   background: #071625;
